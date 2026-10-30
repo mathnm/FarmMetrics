@@ -36,3 +36,7 @@ O script atualiza tempos de crescimento, rebrota, estações, rendimento e preç
 - Tempo de máquina convertido em dias usando 1.440 minutos por dia.
 - Redução de crescimento por fertilizante = `ceil(dias × velocidade)` (o jogo distribui a redução por fases; bate com a wiki para as culturas listadas).
 - Chance de produto grande (Ovo/Leite Grande) = amizade ÷ `DeluxeProduceCareDivisor`; trufas = 1 por dia em que o porco sai.
+
+## Publicar no GitHub Pages
+
+O workflow `.github/workflows/deploy.yml` roda os testes, faz o build e publica `dist/` a cada push na `main`. Para ativar, vá em **Settings → Pages** e, em **Source**, escolha **GitHub Actions**. O site fica em `https://mathnm.github.io/FarmMetrics/`.
